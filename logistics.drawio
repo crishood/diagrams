@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.0.11">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="1363" dy="2048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1163" dy="1170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-9" value="&amp;nbsp;id INT AUTO_INCREMENT PRIMARY KEY" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-7">
+        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-9" value="id CHAR(36) PRIMARY KEY DEFAULT (UUID())" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-7">
           <mxGeometry x="30" width="360" height="30" as="geometry">
             <mxRectangle width="360" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -111,7 +111,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-22" value="&amp;nbsp;id INT AUTO_INCREMENT PRIMARY KEY" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-20">
+        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-22" value="id CHAR(36) PRIMARY KEY DEFAULT (UUID())" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-20">
           <mxGeometry x="30" width="570" height="30" as="geometry">
             <mxRectangle width="570" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -283,7 +283,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-35" value="id INT AUTO_INCREMENT PRIMARY KEY," style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-33">
+        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-35" value="id CHAR(36) PRIMARY KEY DEFAULT (UUID())" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-33">
           <mxGeometry x="30" width="290" height="30" as="geometry">
             <mxRectangle width="290" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -377,7 +377,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-48" value="id INT AUTO_INCREMENT PRIMARY KEY" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-46">
+        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-48" value="id CHAR(36) PRIMARY KEY DEFAULT (UUID())" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-46">
           <mxGeometry x="30" width="527.5" height="30" as="geometry">
             <mxRectangle width="527.5" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -510,7 +510,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-61" value="id INT AUTO_INCREMENT PRIMARY KEY," style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-59">
+        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-61" value="id CHAR(36) PRIMARY KEY DEFAULT (UUID())" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-59">
           <mxGeometry x="30" width="450" height="30" as="geometry">
             <mxRectangle width="450" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -578,7 +578,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-135" value="id INT AUTO_INCREMENT PRIMARY KEY" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-133">
+        <mxCell id="r4s87fFPxj2cqv9Bb6Lu-135" value="id CHAR(36) PRIMARY KEY DEFAULT (UUID())" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="r4s87fFPxj2cqv9Bb6Lu-133">
           <mxGeometry x="30" width="365" height="30" as="geometry">
             <mxRectangle width="365" height="30" as="alternateBounds" />
           </mxGeometry>
