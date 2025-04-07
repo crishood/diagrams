@@ -1,9 +1,69 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
-  <diagram name="Página-1" id="ZJsqTme5BdFIEOpRjtZw">
-    <mxGraphModel>
+  <diagram name="ERD" id="ZJsqTme5BdFIEOpRjtZw">
+    <mxGraphModel dx="1194" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="LW36mt25fnmedZN8M17H-2" value="users&#xa;id (PK, UUID)&#xa;name&#xa;email (unique)&#xa;password&#xa;role (enum)&#xa;created_at&#xa;updated_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="260" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-3" value="products&#xa;id (PK, UUID)&#xa;user_id (FK → users.id)&#xa;title&#xa;description&#xa;price&#xa;cover_image_path&#xa;file_path&#xa;is_published&#xa;created_at&#xa;updated_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-4" value="tags&#xa;id (PK, UUID)&#xa;name (unique)&#xa;is_type&#xa;created_at&#xa;updated_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="260" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-5" value="product_tag&#xa;product_id (PK, FK → products.id)&#xa;tag_id (PK, FK → tags.id)" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-6" value="orders&#xa;id (PK, UUID)&#xa;user_id (FK → users.id)&#xa;total_price&#xa;status (enum)&#xa;promotion_id (FK → promotions.id, nullable)&#xa;created_at&#xa;updated_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="260" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-7" value="order_items&#xa;id (PK, UUID)&#xa;order_id (FK → orders.id)&#xa;product_id (FK → products.id)&#xa;price_at_purchase" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="300" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-8" value="downloads&#xa;id (PK, UUID)&#xa;user_id (FK → users.id)&#xa;product_id (FK → products.id)&#xa;download_token&#xa;expires_at&#xa;created_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-9" value="reviews&#xa;id (PK, UUID)&#xa;user_id (FK → users.id)&#xa;product_id (FK → products.id)&#xa;rating (1–5)&#xa;comment&#xa;created_at&#xa;updated_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="500" width="260" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-10" value="promotions&#xa;id (PK, UUID)&#xa;code (unique)&#xa;discount_type (enum)&#xa;amount&#xa;valid_from&#xa;valid_until&#xa;max_uses (nullable)&#xa;current_uses&#xa;created_at&#xa;updated_at" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="500" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-11" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-3" target="LW36mt25fnmedZN8M17H-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-12" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-5" target="LW36mt25fnmedZN8M17H-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-13" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-5" target="LW36mt25fnmedZN8M17H-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-14" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-6" target="LW36mt25fnmedZN8M17H-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-15" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-6" target="LW36mt25fnmedZN8M17H-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-16" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-7" target="LW36mt25fnmedZN8M17H-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-17" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-7" target="LW36mt25fnmedZN8M17H-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-18" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-8" target="LW36mt25fnmedZN8M17H-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-19" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-8" target="LW36mt25fnmedZN8M17H-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-20" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-9" target="LW36mt25fnmedZN8M17H-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LW36mt25fnmedZN8M17H-21" style="endArrow=block;endFill=1;" edge="1" parent="1" source="LW36mt25fnmedZN8M17H-9" target="LW36mt25fnmedZN8M17H-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
